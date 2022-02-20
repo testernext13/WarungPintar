@@ -29,4 +29,4 @@ As a user
 How to run Automation Script :
 
 1. Before to running, at codecept.conf.js file must be settings gherkin: features & steps with selected path Exercise files to running. (exp : './features/Exercise2.feature' & './step_definitions/exercise2.steps.js') 
-2. To running selected scenario can use @tags selected scenario, (exp:  npx codeceptjs run --grep "@scenario_view")
+2. To running selected scenario can use @tags selected scenario on Terminal, (exp:  npx codeceptjs run --grep "@scenario_view")
