@@ -3,10 +3,12 @@
 Pre-condition Automation framework :
 
 1.Testing automation framework i used CodeceptJS with Puppeteer Gherkin.
+
 2. For support Gherkin feature and steps scripts, Install extension :
 - Cucumber (Gherkin) Full Support
 - Feature syntax Highlight & Snippets (Cucumber/Gherkin)
 - Snippets and Syntax Highlight for gherkin (cucumber)
+- 
 3. To provide element selectors, i will be grouping with Page Object.
 
 Do i selected to create Automate :
