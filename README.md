@@ -8,7 +8,7 @@ Pre-condition Automation framework :
 - Cucumber (Gherkin) Full Support
 - Feature syntax Highlight & Snippets (Cucumber/Gherkin)
 - Snippets and Syntax Highlight for gherkin (cucumber)
-- 
+
 3. To provide element selectors, i will be grouping with Page Object.
 
 Do i selected to create Automate :
@@ -30,3 +30,10 @@ How to run Automation Script :
 
 1. Before to running, at codecept.conf.js file must be settings gherkin: features & steps with selected path Exercise files to running. (exp : './features/Exercise2.feature' & './step_definitions/exercise2.steps.js') 
 2. To running selected scenario can use @tags selected scenario on Terminal, (exp:  npx codeceptjs run --grep "@scenario_view")
+
+
+Exercise 3:
+For this exercise, you will be creating mock-ups for API tests on https://www.mocky.io/.
+
+- Using postman to hit API collection.
+- I make 4 request, with logging test the response code.
