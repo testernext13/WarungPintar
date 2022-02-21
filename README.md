@@ -14,7 +14,7 @@ Pre-condition Automation framework :
 Do i selected to create Automate :
 
 Exercise 1:
-For this exercise, I creating a test script for the Scenario 1 Access a Product via category after applying multiple filters on www.ebay.com. And Scenario 2 :  Access a Product via Search on www.ebay.com.
+For this exercise, I creating a test script for the Scenario 2 :  Access a Product via Search on www.ebay.com.
 
 Exercise 2:
 For this exercise, you will be creating end-to-end (e2e) tests for creating a gist.
