@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "98eba226-a9fe-4aa4-8b72-f319d68623a5",
+		"name": "Mock API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"prefix\": \"PT\",\r\n\"name\": \"Sejahtera\",\r\n\"suffix\": \"Tbk\",\r\n\"industry_id\": \"1\",\r\n\"employee_size\": \"500\",\r\n\"street\": \"Jl.Sudirman kav. 21\",\r\n\"place\": \"Sudirman Tower\",\r\n\"geograph_id\": 100,\r\n\"phone\": \"08561290092\",\r\n}"
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/89dc1f51-0f16-4f32-a1c6-d6177c91d218",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"89dc1f51-0f16-4f32-a1c6-d6177c91d218"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bad Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"prefix\": \"PT\",\r\n\"name\": \"-7777\",\r\n\"suffix\": \"Tbk\",\r\n\"industry_id\": \"1\",\r\n\"employee_size\": \"500\",\r\n\"street\": \"Jl.Sudirman kav. 21\",\r\n\"place\": \"Sudirman Tower\",\r\n\"geograph_id\": 100,\r\n\"phone\": \"08561290092\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/5b84daa7-3f3c-487c-b906-9b15779a4e77",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"5b84daa7-3f3c-487c-b906-9b15779a4e77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Internal Server Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Verify message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql('Internal Server Error');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"prefix\": \"PT\",\r\n\"name\": \"-7777\",\r\n\"suffix\": \"Tbk\",\r\n\"industry_id\": \"1\",\r\n\"employee_size\": \"500\",\r\n\"street\": \"Jl.Sudirman kav. 21\",\r\n\"place\": \"Sudirman Tower\",\r\n\"geograph_id\": 100,\r\n\"phone\": \"08561290092\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/b6d46c69-8400-412f-a56f-8ca7a5bd5874",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"b6d46c69-8400-412f-a56f-8ca7a5bd5874"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Not Found",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"prefix\": \"PT\",\r\n\"name\": \"-7777\",\r\n\"suffix\": \"Tbk\",\r\n\"industry_id\": \"1\",\r\n\"employee_size\": \"500\",\r\n\"street\": \"Jl.Sudirman kav. 21\",\r\n\"place\": \"Sudirman Tower\",\r\n\"geograph_id\": 100,\r\n\"phone\": \"08561290092\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/125e65f6-e1db-49ab-8758-271d34588930",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"125e65f6-e1db-49ab-8758-271d34588930"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
